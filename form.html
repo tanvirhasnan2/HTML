@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>HTML forms Practice</h2>
+    <form action="backend.php">
+        <fieldset>
+            <legend>Entry Form:</legend>
+            <label for="name">Name:</label>
+            <div>
+                <input type="text" name="myName" id="name">
+            </div>
+            <br>
+            <label for="text2">Role:</label>
+            <div>
+                <input type="text" name="myRole" id="text2">
+            </div>
+            <br>
+            <label for="email">Email:</label>
+            <div>
+                <input type="email" name="myEmail" id="email">
+            </div>
+            <br>
+            <label for="date">Date:</label>
+            <div>
+                <input type="date" name="myDate" id="date">
+            </div>
+            <br>
+            <label for="text3">Number:</label>
+            <div>
+                <input type="number" name="number" id="text3">
+            </div>
+            <br>
+
+            <div>
+                Are you eligible?&nbsp;
+                <label for="checkingY">Yes</label>
+                <input type="checkbox" name="myEligiblity" id="checkingY" checked> 
+
+                <label for="checkingN">No</label>
+                <input type="checkbox" name="myEligiblity" id="checkingN">
+            </div>
+            <br>
+            <div>
+                Gender:
+                <label for="malePerson">Male</label>
+                <input type="radio" name="person" id="malePerson"> 
+                <label for="femalePerson">Female</label>
+                <input type="radio" name="person" id="femalePerson"> 
+                <label for="otherPerson">Other</label>
+                <input type="radio" name="person" id="otherPerson">
+            </div>
+            <br>
+            <div>
+                <label for="tArea">Write something</label> <br>
+                <textarea name="myText" cols="30" rows="10" id="tArea"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="car">Car</label>
+                <select name="myCar" id="car">
+                    <option value="bmw">BMW</option>
+                    <option value="ind">Indica</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
