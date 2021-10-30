@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Style</title>
+    <style>
+        a:link, a:visited{
+            color:white;
+            background-color: red;
+            text-decoration: none;
+            padding: 3px 5px;
+            text-align: center;
+            display: inline-block;
+            border:1px solid yellow;
+        }
+
+        a:hover, a:active{
+            background-color: rgb(121, 0, 0);
+            border: 1px solid blue;
+        }
+        
+        ul.a{
+            list-style-type: circle;
+        }
+
+        ul.b{
+            list-style-type: square;
+        }
+
+        ol.c{
+            list-style-type: upper-alpha;
+        }
+
+        ol.d{
+            list-style-type: lower-alpha;
+        }
+    </style>
+</head>
+<body>
+    <h2>Style a link with a color</h2>
+    <p><a href="#" target="_black">This is a link</a></p>
+
+    <h2>The list-style-type Property</h2>
+
+    <p>Example of unordered lists:</p>
+    <ul class="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ordered lists:</p>
+    <ol class="c">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+    </ol>
+
+    <ol class="d">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+    </ol>
+</body>
+</html>
