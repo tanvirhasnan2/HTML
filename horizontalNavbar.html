@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style-type: none;
+            overflow:hidden;
+            background-color: #f3f3f3;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            border: 1px solid #e7e7e7;
+        }
+
+        li{
+            float: left;
+            /* border-right: 1px solid #bbb; */
+        }
+        
+        li a{
+            display: block;
+            text-decoration: none;
+            padding: 12px;
+            color: black;
+        }
+
+        li a:hover:not(.active){
+            background-color: #04AA6D;
+
+        }
+
+        .active{
+            background-color: #04AA6D;
+            margin-left: 10px;
+        }
+
+        .about{
+            float: right;
+            margin-right: 10px;
+            /* background-color: #04AA6D; */
+
+        }
+
+        p{
+            margin-top: 50px;
+            padding: 0px 8px;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="home"><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="about"><a class="about" href="#about">About</a></li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut deserunt quae rem voluptatibus veritatis corrupti natus soluta officia illo ipsum non sit, expedita aspernatur reprehenderit molestias quibusdam culpa sint sequi, ipsam quasi? Neque doloribus, provident magni atque impedit, aut veniam perspiciatis quasi iste nemo repellendus, incidunt voluptatibus officia libero? Facere, corporis consequatur est quas dolor neque in sapiente quod quisquam commodi molestias? Molestias quod impedit officia officiis non omnis illum eos voluptatum nobis necessitatibus corporis alias incidunt eaque sunt, facere natus quas assumenda aut dicta consequatur blanditiis mollitia. Debitis ducimus adipisci quibusdam aliquam necessitatibus rerum iste consectetur deleniti dolore!</p>
+    </div>
+</body>
+</html>
